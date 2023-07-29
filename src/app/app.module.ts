@@ -7,6 +7,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RegistrationModule } from './pages/registration/registration.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
     ReactiveFormsModule,
     RegistrationModule,
-    NgbModule
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -26,3 +26,26 @@ body {
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+
+
+.ng-otp-input-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.otp-input {
+    width: 100px !important;
+    height: 55px !important;
+
+    border: solid 1px #D0D5DE !important;
+    text-align: center;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #454C66 !important;
+}
+
+input:focus, select:focus {
+    border: 1px solid #635CA8 !important;
+}

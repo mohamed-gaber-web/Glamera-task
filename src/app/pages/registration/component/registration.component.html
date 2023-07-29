@@ -142,27 +142,9 @@
       phone number ** 34
     </p>
     <form>
-      <div class="row">
-        <div class="col-md-3 col-sm-3 col-xs-3">
-          <div class="form-input">
-            <input type="text" />
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-3 col-xs-3">
-          <div class="form-input">
-            <input type="text" />
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-3 col-xs-3">
-          <div class="form-input">
-            <input type="text" />
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-3 col-xs-3">
-          <div class="form-input">
-            <input type="text" />
-          </div>
-        </div>
+      <div>
+        <!--  (onInputChange)="onOtpChange($event)" -->
+        <ng-otp-input [config]="{ length: 4 }"></ng-otp-input>
       </div>
     </form>
     <p class="timer">
