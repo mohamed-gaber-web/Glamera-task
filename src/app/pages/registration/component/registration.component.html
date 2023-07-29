@@ -1,0 +1,181 @@
+<div class="main">
+  <div class="container">
+    <div class="signup-content">
+      <div class="signup-img">
+        <img src="https://placehold.co/440x850" alt="" />
+        <div class="caption">
+          <img src="../../../../assets/images/Group 52.svg" alt="" />
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry
+          </p>
+          <h4>Salma Mohamed</h4>
+          <h5>Founder, Soliter Salon</h5>
+        </div>
+      </div>
+      <div class="signup-form">
+        <div class="get-help">
+          <h2>Having troubles? <b> Get Help </b></h2>
+        </div>
+        <form class="register-form" id="register-form">
+          <h3>Start your business now</h3>
+          <p>
+            Creating your company is just a few steps away,<br />
+            Enter your email address to continue.
+          </p>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-input">
+                <label for="first_name" class="required">First name</label>
+                <input
+                  type="text"
+                  name="first_name"
+                  id="first_name"
+                  placeholder="Enter your first name"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-input">
+                <label for="last_name" class="required">Last name</label>
+                <input
+                  type="text"
+                  name="last_name"
+                  id="last_name"
+                  placeholder="Enter your last name"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-input">
+                <label for="email" class="required">Email</label>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-input">
+                <label for="phone_number" class="required">Phone number</label>
+                <input
+                  type="text"
+                  name="phone_number"
+                  id="phone_number"
+                  placeholder="Enter your phone number"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-input">
+                <label for="password" class="required">Password</label>
+                <input
+                  [type]="passwordVisible ? 'text' : 'password'"
+                  name="password"
+                  id="password"
+                  placeholder="Enter your password"
+                />
+                <i
+                  (click)="passwordVisible = !passwordVisible"
+                  [ngClass]="
+                    passwordVisible
+                      ? 'bi-eye-fill password-icon'
+                      : 'bi-eye-slash-fill password-icon'
+                  "
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="row footer-form">
+            <div class="col-md-6">
+              <div class="form-input">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Agree to the <span> Privacy Policy </span> and <br />
+                    <span> Terms & Conditions </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="btn-form">
+                <button type="button" (click)="open(content)">
+                  Next <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <button
+      type="button"
+      class="btn-close"
+      aria-label="Close"
+      (click)="modal.dismiss('Cross click')"
+    ></button>
+  </div>
+  <div class="modal-body">
+    <div class="header-img">
+      <img src="../../../../assets/images/Group 14.svg" />
+    </div>
+    <h3>Verification Code</h3>
+    <p class="p-header">
+      Please enter the verification code sent to your <br />
+      phone number ** 34
+    </p>
+    <form>
+      <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <div class="form-input">
+            <input type="text" />
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <div class="form-input">
+            <input type="text" />
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <div class="form-input">
+            <input type="text" />
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <div class="form-input">
+            <input type="text" />
+          </div>
+        </div>
+      </div>
+    </form>
+    <p class="timer">
+      The code will be sent again within <span> 59 </span> seconds
+    </p>
+  </div>
+  <div class="modal-footer">
+    <button
+      (click)="modal.dismiss('Cross click')"
+      routerLink="/type-of-business"
+      class="btn btn-outline-dark"
+    >
+      VERIFY
+    </button>
+  </div>
+</ng-template>

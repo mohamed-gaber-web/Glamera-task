@@ -1,0 +1,101 @@
+.signup-img {
+  position: relative;
+
+  .caption {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 16px 16px 57px 16px;
+    position: absolute;
+    bottom: 50px;
+    right: -48px;
+    width: 90%;
+
+    img {
+      position: absolute;
+      top: -40px;
+      left: -40px;
+    }
+
+    p {
+      color: #383838;
+      font-size: 14px;
+      padding: 10px 0 30px 0;
+      line-height: 28px;
+      font-weight: 400;
+    }
+
+    h4 {
+      font-size: 16px;
+      color: #383838;
+      font-weight: 500;
+    }
+
+    h5 {
+      color: #383838;
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+  }
+}
+
+.modal-header {
+  border: none;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.modal-body {
+  .header-img {
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  h3 {
+    color: #454C66;
+    font-size: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+
+  p.p-header {
+    text-align: center;
+    color: #747A88;
+    font-size: 16px;
+    padding-bottom: 30px;
+    font-weight: 400;
+    line-height: 28px;
+
+
+  }
+}
+
+.modal-footer {
+  border: none;
+  text-align: center;
+  margin: 0 auto 20px auto;
+
+  button {
+    all: unset;
+    background-color: #635CA8;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 13px 50px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+
+p.timer {
+  color: #747A88;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: center;
+  span {
+    color: #6AC7BB;
+    font-weight: 600;
+    }
+}

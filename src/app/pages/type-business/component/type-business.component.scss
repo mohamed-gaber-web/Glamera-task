@@ -1,0 +1,88 @@
+.signup-img {
+  position: relative;
+  background: url('../../../../assets/images/Group\ 44.svg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 90vh;
+  background-color: #f5f6f9;
+
+  .caption {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 16px 16px 57px 16px;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+
+    img {
+      margin-bottom: 80px;
+    }
+
+    p {
+      color: #fff;
+      font-size: 14px;
+      line-height: 28px;
+      font-weight: 300;
+    }
+
+    h4 {
+      font-size: 28px;
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+  }
+}
+
+.type {
+
+  h3 {
+    text-transform: capitalize;
+    margin-bottom: 7px;
+    font-weight: 400;
+    color: #454C66;
+    font-size: 14px;
+  }
+
+  .container-input-img {
+
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 12px 20px;
+    width: 100%;
+
+    p {
+      padding: 0;
+      margin: 0;
+    }
+
+    .input-img {
+      border: 1px solid #6AC7BB;
+      cursor: pointer;
+    }
+  }
+
+}
+
+.active {
+  background-color: #6AC7BB;
+}
+.inactive {
+  background-color: transparent;
+}
+
+.back {
+  margin-bottom: 30px;
+  cursor: pointer;
+
+  i {
+    font-size: 20px;
+  }
+}
