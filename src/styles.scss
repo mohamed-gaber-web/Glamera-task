@@ -4,6 +4,9 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
+@import "swiper/scss";
+@import "swiper/scss/navigation";
+@import "swiper/scss/pagination";
 
 @import './assets/scss/common/extend';
 @import './assets/scss/common/minxi.scss';
@@ -74,4 +77,16 @@ input::placeholder {
 .help:hover .help-text {
   display: block !important;
   opacity: 1;
+}
+
+.main-swiper {
+  width: 600px;
+  z-index: 9999 !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 40px;
+  color: #fff;
+  background-color: #fff;
+  border-radius: 10px;
 }

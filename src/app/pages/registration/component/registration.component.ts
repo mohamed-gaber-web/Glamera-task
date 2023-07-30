@@ -1,6 +1,15 @@
 import { Component } from '@angular/core';
 import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 
+import SwiperCore, {
+  SwiperOptions,
+  Pagination,
+  Navigation,
+  Autoplay,
+} from 'swiper';
+import { SwiperComponent } from 'swiper/angular';
+SwiperCore.use([Navigation, Pagination, Autoplay]);
+
 @Component({
   selector: 'app-regestration',
   templateUrl: './registration.component.html',
@@ -16,6 +25,19 @@ export class RegistrationComponent {
 		this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title' }).result.then(
 		);
 	}
+
+  config: SwiperOptions = {
+    slidesPerView: 1,
+    autoplay: true,
+    direction: 'horizontal',
+    pagination: { clickable: true, type: 'bullets' },
+    // autoHeight: true,
+    scrollbar: { draggable: true },
+    lazy: true,
+    speed: 1000,
+    loop: false,
+    navigation: false,
+  };
 
   closeModal() {
     this.modalReference.close();
