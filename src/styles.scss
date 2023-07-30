@@ -49,3 +49,29 @@ body {
 input:focus, select:focus {
     border: 1px solid #635CA8 !important  ;
 }
+
+
+input::placeholder {
+    font-size: 12px;
+    color: #B7BEC9;
+}
+
+.help-text {
+  background-color: #ccc;
+  color: #383838;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 10px;
+  display: none;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.help {
+  cursor: pointer;
+}
+
+.help:hover .help-text {
+  display: block !important;
+  opacity: 1;
+}
