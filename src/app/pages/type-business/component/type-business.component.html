@@ -48,8 +48,8 @@
                   <img
                     class="input-img"
                     [src]="type.img"
-                    (click)="toggleCheckItem()"
-                    [ngClass]="toggleCheck ? 'active' : 'inactive '"
+                    (click)="selelctItem(type.name)"
+                    [ngClass]="selectedName.includes(type.name) ? 'active' : ''"
                   />
                   <p>{{ type.name }}</p>
                 </div>

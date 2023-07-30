@@ -1,11 +1,16 @@
 <div class="main">
   <div class="container">
     <div class="signup-content">
-      <swiper [config]="config" class="main-swiper">
-        <ng-template swiperSlide *ngFor="let item of [1]">
-          <div class="signup-img">
-            <img src="https://placehold.co/440x850" alt="" />
-            <div class="caption">
+      <div class="signup-img">
+        <ngb-carousel *ngIf="images">
+          <ng-template ngbSlide *ngFor="let item of [1, 2, 3]">
+            <div class="picsum-img-wrapper">
+              <img
+                src="https://placehold.co/440x850"
+                alt="Random first slide"
+              />
+            </div>
+            <div class="carousel-caption">
               <img src="../../../../assets/images/Group 52.svg" alt="" />
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -14,9 +19,9 @@
               <h4>Salma Mohamed</h4>
               <h5>Founder, Soliter Salon</h5>
             </div>
-          </div>
-        </ng-template>
-      </swiper>
+          </ng-template>
+        </ngb-carousel>
+      </div>
       <div class="signup-form">
         <div class="get-help">
           <h2>Having troubles? <b> Get Help </b></h2>

@@ -10,6 +10,8 @@ import SwiperCore, {
 import { SwiperComponent } from 'swiper/angular';
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
+
+
 @Component({
   selector: 'app-regestration',
   templateUrl: './registration.component.html',
@@ -19,6 +21,8 @@ export class RegistrationComponent {
 
   passwordVisible = false;
   modalReference!: NgbModalRef;
+  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
+
   constructor(private modalService: NgbModal) {}
 
 	open(content: any) {
@@ -29,9 +33,8 @@ export class RegistrationComponent {
   config: SwiperOptions = {
     slidesPerView: 1,
     autoplay: true,
-    direction: 'horizontal',
     pagination: { clickable: true, type: 'bullets' },
-    // autoHeight: true,
+    autoHeight: true,
     scrollbar: { draggable: true },
     lazy: true,
     speed: 1000,

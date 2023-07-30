@@ -6,6 +6,8 @@ import { RegistrationComponent } from './component/registration.component';
 
 import { NgOtpInputModule } from  'ng-otp-input';
 import { SwiperModule } from 'swiper/angular';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   declarations: [RegistrationComponent],
@@ -13,7 +15,8 @@ import { SwiperModule } from 'swiper/angular';
     CommonModule,
     RegistrationRoutingModule,
     NgOtpInputModule,
-    SwiperModule
+    SwiperModule,
+    NgbCarouselModule
   ],
   exports: [RegistrationComponent]
 })
